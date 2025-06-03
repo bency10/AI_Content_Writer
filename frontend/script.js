@@ -7,7 +7,7 @@ function generateKeywords() {
   const statusDiv = document.getElementById('statusKeywords');
   statusDiv.textContent = "Generating...";
 
-  fetch('http://localhost:5000/keywords', {
+  fetch('https://web-production-8f74e8.up.railway.app/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ keyword })
@@ -64,7 +64,7 @@ function generateTitles() {
   const statusDiv = document.getElementById('statusTitles');
   statusDiv.textContent = "Generating...";
 
-  fetch('http://localhost:5000/titles', {
+  fetch('https://web-production-8f74e8.up.railway.app/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ keyword })
@@ -96,7 +96,7 @@ function generateTopics() {
   const statusDiv = document.getElementById('statusTopics');
   statusDiv.textContent = "Generating...";
 
-  fetch('http://localhost:5000/topics', {
+  fetch('https://web-production-8f74e8.up.railway.app/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ title })
@@ -144,7 +144,7 @@ function generateContent() {
   const statusDiv = document.getElementById('statusContent');
   statusDiv.textContent = "Generating...";
 
-  fetch('http://localhost:5000/content', {
+  fetch('https://web-production-8f74e8.up.railway.app/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ topic, keyword })

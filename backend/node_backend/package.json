@@ -6,7 +6,7 @@
   }
     "name": "vercel-api-app",
   "version": "1.0.0",
-  "type": "module",   // important for ES modules
+  "type": "module",   
   "scripts": {
     "dev": "vercel dev"
   }

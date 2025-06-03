@@ -4,4 +4,10 @@
     "cors": "^2.8.5",
     "express": "^5.1.0"
   }
+    "name": "vercel-api-app",
+  "version": "1.0.0",
+  "type": "module",   // important for ES modules
+  "scripts": {
+    "dev": "vercel dev"
+  }
 }

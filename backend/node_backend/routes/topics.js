@@ -6,7 +6,7 @@ router.post('/', async (req, res) => {
   const title = req.body.title;
 
   try {
-    const response = await axios.post('http://localhost:7000/generate', {
+    const response = await axios.post('https://web-production-8f74e8.up.railway.app/generate', {
       task: 'topics',
       input: title
     });

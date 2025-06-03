@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PYTHON_API = 'http://localhost:7000/generate';
+const PYTHON_API = 'https://web-production-8f74e8.up.railway.app/generate';
 
 app.post('/keywords', async (req, res) => {
   const keyword = req.body.keyword;
